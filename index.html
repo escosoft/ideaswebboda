@@ -7,8 +7,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>S+B Wedding</title>
-        <meta name="description" content="Welcome to the wedding website for Sarah and Brad's Big Day!">
+        <title>L+AB</title>
+        <meta name="description" content="¡Nos casamos!">
 
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
@@ -21,7 +21,7 @@
 
         <link rel="shortcut icon" href="img/favicon.ico?v=1">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main-1.6.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -32,7 +32,8 @@
         <![endif]-->
         
         <div id="bg-image">
-            <img src="img/bg-pic.jpg" alt="bg" />
+            <img class="mySlides" src="images/bg-pic1.jpg" alt="bg" />
+            <img class="mySlides" src="images/bg-pic2.jpg" alt="bg" />
         </div>
 
         <div id="bg-container">
@@ -47,7 +48,6 @@
                             <li><a href="#registry">REGISTRY</a></li>
                             <li><a href="blog/index.html" target="_blank">BLOG</a></li>
                         </ul>
-
                     </nav>
                 </div>
             </div>
@@ -57,16 +57,12 @@
 
                     <header>
                         <div id="introtext">
-                            <span class="head-sarah">Sarah</span>
+                            <span class="head-sarah">Luis</span>
                             <span class="head-brad">&nbsp;
                                 <span class="amp">&amp;</span> 
-                                BRADLEY
+                                ANA BELÉN
                             </span>
-                            <div class="date">SEPTEMBER 6<sup>th</sup>, 2013</div>
-                        </div>
-
-                        <div class="learnmore" style="background-color: red; padding: 30px 0 30px 0; font-size: 22px;">
-                            Learn more about Bradley's mobile &amp; web design/development creations at &nbsp;&nbsp;<a href="http://scal.io" target="_blank"><strong>http://scal.io</strong></a>
+                            <div class="date">17 de Junio, 2017</div>
                         </div>
                     </header>
 
@@ -327,6 +323,23 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
+        </script>
+
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 9000);    
+        }
         </script>
     </body>
 </html>

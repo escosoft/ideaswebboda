@@ -64,9 +64,7 @@ textarea {
 }
 
 
-/* ===== Initializr Styles ==================================================
-   Author: Bradley Greenwood
-   ========================================================================== */
+/* ===== Initializr Styles ==================================================*/
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
@@ -494,7 +492,7 @@ section h2 {
 
     .main header {
         margin-top: 10%;
-        margin-bottom: 30%;
+        margin-bottom: 10%;
         float: left;
         width: 100%;
     }
@@ -567,7 +565,7 @@ section h2 {
 
     .main header {
         margin-top: 4%;
-        margin-bottom: 30%;
+        margin-bottom: 10%;
         float: left;
         width: 100%;
     }
